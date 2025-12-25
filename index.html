@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouncing Ray</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div id="controls">
+        <button id="playPauseBtn">Pause</button>
+        <div class="control-group">
+            <label for="widthRange">Width</label>
+            <input type="range" id="widthRange" min="100" max="800" value="400">
+        </div>
+        <div class="control-group">
+            <label for="heightRange">Height</label>
+            <input type="range" id="heightRange" min="100" max="600" value="300">
+        </div>
+    </div>
     <canvas id="gameCanvas"></canvas>
     <script src="script.js"></script>
 </body>
+
 </html>
